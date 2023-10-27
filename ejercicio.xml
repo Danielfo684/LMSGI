@@ -1,0 +1,6 @@
+<patata>
+    <comida>
+        <texto> La patata es una comida</texto>
+    </comida>
+    <recetas tipo="ensaladas"> Las recetas son las siguientes</recetas>
+</patata>
