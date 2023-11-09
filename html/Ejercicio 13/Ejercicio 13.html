@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+
+</head>
+
+<body>
+    <div style="border: 1px solid black; background-color: rgb(185, 130, 221);">
+        <h1 style="text-align: center;">Inscripción al curso de html</h1>
+        <h2 style="text-align: center;"> Para realizar su inscripción, rellene el formulario</h2>
+    </div>
+ 
+        <fieldset style="background-color: antiquewhite;">
+
+            <legend>
+                <h3>Datos personales</h3>
+            </legend>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="nombre"><br>
+            <label for="sname">Apellidos:</label><br>
+            <input type="text" id="sname" name="Apellidos"><br>
+            <input type="checkbox" id="consent">
+            <label for="consent">Doy mi consentimiento para el tratamiento de mis datos personales.</label><br>
+        </fieldset>
+
+        <fieldset style="background-color: antiquewhite;">
+            <legend>
+                <h3>Conocimientos previos al curso</h3>
+            </legend>
+            <h4>¿Qué conocimientos tiene en la materia?</h4>
+            <input type="radio" id="tengo1" name="conprevios">
+            <label for="tengo1">Conocimientos básicos.</label><br>
+            <input type="radio" id="tengo2" name="conprevios">
+            <label for="tengo2">Conocimientos intermedios.</label><br>
+            <input type="radio" id="tengo3" name="conprevios">
+            <label for="tengo3">Conocimientos avanzados.</label><br>
+
+            <h4>¿Posee algún certificado de idioma?</h4>
+            <input type="checkbox" id="idioma1">
+            <label for="idioma1">Inglés</label><br>
+            <input type="checkbox" id="idioma2">
+            <label for="idioma2">Italiano</label><br>
+            <input type="checkbox" id="idioma3">
+            <label for="idioma3">Francés</label><br>
+            <input type="checkbox" id="otro">
+            <label for="otro">Otros:</label><br>
+            <label for="otrotexto">Indique en caso afirmativo qué otros idiomas habla:</label>
+            <input type="text" id="otrotexto"><br>
+        </fieldset>
+
+   
+        <fieldset style="background-color: blanchedalmond;">
+            <legend>
+                <h3>Puntos de interés</h3>
+            </legend>
+            <h4>Indique qué parte del curso le interesa más:</h4>
+            <label for="temas">Temas:</label> <br>
+            <select id="temas" name="temas" size="3">
+                <option value="Intro">Introducción a HTML</option>
+                <option value="Forms">Formularios HTML</option>
+                <option value="CSS">CSS en HTML</option>
+                <option value="javaScript">JavaScript en HTML</option>
+                </select>
+                <fieldset>
+                    <legend><h4>Sugerencias</h4></legend>
+                    <label for="horario">Horario de preferencia</label>
+                    <select name="horario" id="horario">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select><br><br>
+                    <label for="lugar">Lugar de realización</label>
+                    <select name="lugar" id="lugar">
+                        <option value="aula1">Aula planta baja</option>
+                        <option value="aula2">Aula planta 2</option>
+                    </select>
+                    <label for="sugerencia"><h4>Indíquenos que aspectos deberían incluirse en el programa:</h4></label>
+                    <textarea name="sugerencia" id="sugerencia" cols="30" rows="6"></textarea>
+                </fieldset>
+        </fieldset>
+   
+    <input type="submit" name="Enviar">
+
+</body>
+
+</html>
