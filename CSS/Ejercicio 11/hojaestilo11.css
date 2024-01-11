@@ -1,0 +1,28 @@
+body{
+    padding: 3px;
+   }
+header{
+background-color: rgb(153, 23, 23);
+color: white;
+text-align: center;
+height: 80px;
+padding: 1px;
+margin: 5px;
+}
+div{
+background-color: rosybrown;
+padding: 10px;
+margin: 5px;
+font-size: large;
+}
+footer{
+margin: 5px;
+padding: 10px;
+background-color: rgb(207, 207, 171);
+}
+a{
+margin: 5px;
+border: 1px solid green;
+text-align: center;
+font-size: large;        
+}
