@@ -1,0 +1,36 @@
+body{
+margin: 0px;
+padding: 0px;
+font-family: Verdana, serif;
+
+}
+header{
+    padding: 30px;
+    background: #d8d8ec;
+    color: #866363;
+    font-size: 3em;
+    font-weight: bold;
+    justify-content: space-between;
+display: flex;
+}
+
+nav{
+display: flex;
+justify-content: flex-start;
+background: #a78888;
+
+}
+
+nav a {
+    color: #e6d5d5;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover{
+    background: #cab8b8;
+    color: #c29696;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+}

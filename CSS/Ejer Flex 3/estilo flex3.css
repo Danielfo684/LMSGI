@@ -1,0 +1,48 @@
+body {
+    margin: 5px;
+    padding: 5px;
+    font-family: Verdana;
+
+}
+
+header {
+    padding: 20px;
+    background: #202033;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: right;
+}
+
+section {
+    display: flex;
+
+}
+
+article {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+#articulo-1{
+    background: #a06e9c;
+}
+#articulo-2{
+    background: #606088;
+}
+#articulo-3{
+    background: #67ac91;
+}
+
+p{
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+
+    width: 100%;
+}
