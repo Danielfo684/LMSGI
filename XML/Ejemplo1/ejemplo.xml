@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejemplo.xsd">
+   <libro isbn="ebcde" >
+    <titulo>Los pilares de la tierra</titulo>
+    <autor>Ken Follet</autor>
+    <editorial>patata</editorial>
+    <precio>30.5</precio>
+    <tapa>dura</tapa>
+   </libro>
+
+
+   <libro isbn="abcde">
+    <titulo>Los pilares de la tierra</titulo>
+    <autor>Ken Follet</autor>
+    <editorial>patata</editorial>
+    <precio>100.05</precio>
+    <tapa>blanda</tapa>
+   </libro>
+
+</biblioteca>
