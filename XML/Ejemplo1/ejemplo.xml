@@ -6,7 +6,7 @@ xsi:noNamespaceSchemaLocation="ejemplo.xsd">
     <autor>Ken Follet</autor>
     <editorial>patata</editorial>
     <precio>30.5</precio>
-    <tapa>dura</tapa>
+    <tapa2>dura</tapa2>
    </libro>
 
 
@@ -14,8 +14,8 @@ xsi:noNamespaceSchemaLocation="ejemplo.xsd">
     <titulo>Los pilares de la tierra</titulo>
     <autor>Ken Follet</autor>
     <editorial>patata</editorial>
-    <precio>100.05</precio>
-    <tapa>blanda</tapa>
+    <precio>20.05</precio>
+    <tapa2>blanda</tapa2>
    </libro>
 
 </biblioteca>

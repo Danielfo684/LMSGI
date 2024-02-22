@@ -11,7 +11,7 @@
 							<xs:element name="autor" type="xs:string"></xs:element>
 							<xs:element name="editorial" />
 							<xs:element name="precio" type="tipo_precio" />
-							<xs:element name="tapa" />
+							<xs:element name="tapa2" />
 						</xs:sequence>
 						<xs:attribute name="isbn" type="tipo_isbn" />
 					</xs:complexType>
@@ -25,7 +25,7 @@
 		<xs:restriction base="xs:decimal">
 			<xs:minExclusive value="0" />
 			<xs:maxExclusive value="120" />
-			<xs:totalDigits value="5" />
+			<xs:totalDigits value="4" />
 			<xs:fractionDigits value="2"></xs:fractionDigits>
 		</xs:restriction>
 	</xs:simpleType>
@@ -44,9 +44,24 @@
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:complexType name="tipo_editorial2">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="codigo" type="xs:positiveInteger" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
 	<xs:simpleType name="tipo_isbn">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([a-z]){5}"/>
+			<xs:pattern value="([a-z]){5}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="tipo_tapa2">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="dura|blanda" />
+
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
