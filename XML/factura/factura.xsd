@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cuentas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="factura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="emision"/>
+                            <xs:element ref="vendedor"/>
+                            <xs:element ref="cliente"/>
+                            <xs:element ref="articulo" maxOccurs="unbounded" />
+                          <xs:element ref="descuento"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:int"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="emision" type="xs:dateTime"/>
+    <xs:element name="vendedor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cliente">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                <xs:element ref="direccion" />
+                <xs:element ref="telefono" maxOccurs="2" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int" />
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="via" type="xs:string"></xs:element>
+                <xs:element name="cp" type="xs:int"></xs:element>
+                <xs:element name="localidad" type="xs:string"></xs:element>
+                <xs:element name="provincia" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="telefono">
+        <xs:complexType>
+            <xs:attribute name="num" type="xs:int"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="articulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="denominacion" type="xs:string"></xs:element>
+                <xs:element name="precio" type="xs:double"></xs:element>
+                <xs:element name="cantidad" type="xs:int"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int" use="required"/>
+            <xs:attribute name="iva" type="xs:int" />
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="descuento">
+<xs:simpleType>
+    <xs:restriction base="xs:int">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="100"/>
+    </xs:restriction>
+</xs:simpleType>
+
+    </xs:element>
+</xs:schema>

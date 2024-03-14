@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <DatosPersonales>
+        <nombre>Daniel</nombre>
+        <apellidos>Fontalva Ostio</apellidos>
+        <fecha>03/09/1998</fecha>
+        <lugarNacimiento>Málaga</lugarNacimiento>
+        <nacionalidades>España</nacionalidades>
+        <numIdentificacion>25610684T</numIdentificacion>
+        <fotografia></fotografia>
+    </DatosPersonales>
+    <DatosContacto>
+        <tipoVia>Calle</tipoVia>
+        <nombreVia>Primavera</nombreVia>
+        <numero>21</numero>
+        <portal></portal>
+        <escalera></escalera>
+        <piso>3</piso>
+        <puerta>B</puerta>
+        <cp>18006</cp>
+        <país>España</país>
+        <email>dfonost684@ieszaidinvergeles.es</email>
+        <telefonoMovil>616122285</telefonoMovil>
+        <telefonoFijo></telefonoFijo>
+    </DatosContacto>
+    <FormacionAcademica>
+        <Estudio>
+            <nombre>Bachillerato de Ciencias y Tecnología</nombre>
+            <lugarRealizacion>Campillos</lugarRealizacion>
+            <fechaInicio>15/09/2014</fechaInicio>
+            <fechaFinal>15/06/2016</fechaFinal>
+        </Estudio>
+        <Estudio>
+            <nombre>Grado en Filosofía</nombre>
+            <lugarRealizacion>Málaga</lugarRealizacion>
+            <fechaInicio>15/09/2016</fechaInicio>
+            <fechaFinal>15/06/2021</fechaFinal>
+        </Estudio>
+        <Estudio>
+            <nombre>Máster en Igualdad y Género</nombre>
+            <lugarRealizacion>Málaga</lugarRealizacion>
+            <fechaInicio>15/09/2021</fechaInicio>
+            <fechaFinal>15/06/2023</fechaFinal>
+        </Estudio>
+    </FormacionAcademica>
+<Idiomas>
+<Lengua>
+<nombre>Inglés</nombre>
+<nivelExpresionOral>B2</nivelExpresionOral>
+<nivelComprensionOral>C1</nivelComprensionOral>
+<nivelExpresionEscrita>C1</nivelExpresionEscrita>
+<nivelComprensionEscrita>C1</nivelComprensionEscrita>
+<tituloAcreditativo></tituloAcreditativo>
+
+<nivelTitulo>B2</nivelTitulo>
+</Lengua>
+
+
+
+</Idiomas>
+
+</curriculum>
