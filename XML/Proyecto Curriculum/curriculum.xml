@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="esquema.xsd">
+
+   <!-- Datos personales -->
+
     <DatosPersonales>
         <nombre>Daniel</nombre>
         <apellidos>Fontalva Ostio</apellidos>
@@ -10,6 +13,9 @@
         <numIdentificacion>25610684T</numIdentificacion>
         <fotografia></fotografia>
     </DatosPersonales>
+
+       <!--Datos de contacto -->
+
     <DatosContacto>
         <tipoVia>Calle</tipoVia>
         <nombreVia>Primavera</nombreVia>
@@ -24,6 +30,9 @@
         <email>dfonost684@ieszaidinvergeles.es</email>
         <telefonoMovil>616122285</telefonoMovil>
     </DatosContacto>
+
+       <!-- Formación académica -->
+
     <FormacionAcademica>
         <Estudio>
             <nombre>Bachillerato de Ciencias y Tecnología</nombre>
@@ -44,6 +53,9 @@
             <fechaFinal>2023-02-01</fechaFinal>
         </Estudio>
     </FormacionAcademica>
+
+   <!-- Idiomas -->
+
     <Idiomas>
         <Lengua>
             <nombre>Inglés</nombre>
@@ -69,6 +81,9 @@
             <nivelTitulo>A1</nivelTitulo>
         </Lengua>
     </Idiomas>
+
+   <!--Experiencia laboral -->
+
     <ExperienciaLaboral>
         <Trabajo>
             <lugarTrabajo>Federación Ágora</lugarTrabajo>
@@ -83,6 +98,9 @@
             <fechaFinal>2021-03-11</fechaFinal>
         </Trabajo>
     </ExperienciaLaboral>
+
+   <!-- Competencias -->
+
     <CompetenciasSocioProfesionales>
         <competencia>
             <nombreCompetencia>Liderazgo</nombreCompetencia>
@@ -97,6 +115,9 @@
             <nivelCompetencia>3</nivelCompetencia>
         </competencia>
     </CompetenciasSocioProfesionales>
+
+   <!-- Adicionales -->
+
 <Adicionales>
     <Disponibilidad> Completa</Disponibilidad>
     <VehículoPropio> No</VehículoPropio>
