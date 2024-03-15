@@ -4,7 +4,7 @@
     <DatosPersonales>
         <nombre>Daniel</nombre>
         <apellidos>Fontalva Ostio</apellidos>
-        <fecha>03/09/1998</fecha>
+        <fechaNacimiento>1998-09-03</fechaNacimiento>
         <lugarNacimiento>Málaga</lugarNacimiento>
         <nacionalidades>España</nacionalidades>
         <numIdentificacion>25610684T</numIdentificacion>
@@ -14,6 +14,7 @@
         <tipoVia>Calle</tipoVia>
         <nombreVia>Primavera</nombreVia>
         <numero>21</numero>
+        <letra></letra>
         <portal></portal>
         <escalera></escalera>
         <piso>3</piso>
@@ -22,42 +23,84 @@
         <país>España</país>
         <email>dfonost684@ieszaidinvergeles.es</email>
         <telefonoMovil>616122285</telefonoMovil>
-        <telefonoFijo></telefonoFijo>
     </DatosContacto>
     <FormacionAcademica>
         <Estudio>
             <nombre>Bachillerato de Ciencias y Tecnología</nombre>
             <lugarRealizacion>Campillos</lugarRealizacion>
-            <fechaInicio>15/09/2014</fechaInicio>
-            <fechaFinal>15/06/2016</fechaFinal>
+            <fechaInicio>2014-09-15</fechaInicio>
+            <fechaFinal>2016-05-10</fechaFinal>
         </Estudio>
         <Estudio>
             <nombre>Grado en Filosofía</nombre>
             <lugarRealizacion>Málaga</lugarRealizacion>
-            <fechaInicio>15/09/2016</fechaInicio>
-            <fechaFinal>15/06/2021</fechaFinal>
+            <fechaInicio>2016-05-10</fechaInicio>
+            <fechaFinal>2021-02-03</fechaFinal>
         </Estudio>
         <Estudio>
             <nombre>Máster en Igualdad y Género</nombre>
             <lugarRealizacion>Málaga</lugarRealizacion>
-            <fechaInicio>15/09/2021</fechaInicio>
-            <fechaFinal>15/06/2023</fechaFinal>
+            <fechaInicio>2021-10-03</fechaInicio>
+            <fechaFinal>2023-02-01</fechaFinal>
         </Estudio>
     </FormacionAcademica>
-<Idiomas>
-<Lengua>
-<nombre>Inglés</nombre>
-<nivelExpresionOral>B2</nivelExpresionOral>
-<nivelComprensionOral>C1</nivelComprensionOral>
-<nivelExpresionEscrita>C1</nivelExpresionEscrita>
-<nivelComprensionEscrita>C1</nivelComprensionEscrita>
-<tituloAcreditativo></tituloAcreditativo>
-
-<nivelTitulo>B2</nivelTitulo>
-</Lengua>
-
-
-
-</Idiomas>
-
+    <Idiomas>
+        <Lengua>
+            <nombre>Inglés</nombre>
+            <nivelExpresionOral>medio</nivelExpresionOral>
+            <nivelComprensionOral>medio</nivelComprensionOral>
+            <nivelComprensionEscrita>alto</nivelComprensionEscrita>
+            <tituloAcreditativo></tituloAcreditativo>
+            <nivelTitulo>B2</nivelTitulo>
+        </Lengua>
+        <Lengua>
+            <nombre>Italiano</nombre>
+            <nivelExpresionOral>bajo</nivelExpresionOral>
+            <nivelComprensionOral>alto</nivelComprensionOral>
+            <nivelExpresionEscrita>medio</nivelExpresionEscrita>
+            <tituloAcreditativo></tituloAcreditativo>
+            <nivelTitulo>B1</nivelTitulo>
+        </Lengua>
+        <Lengua>
+            <nombre>Portugués</nombre>
+            <nivelExpresionOral>bajo</nivelExpresionOral>
+            <nivelComprensionEscrita>bajo</nivelComprensionEscrita>
+            <tituloAcreditativo></tituloAcreditativo>
+            <nivelTitulo>A1</nivelTitulo>
+        </Lengua>
+    </Idiomas>
+    <ExperienciaLaboral>
+        <Trabajo>
+            <lugarTrabajo>Federación Ágora</lugarTrabajo>
+            <puesto>Técnico de igualdad</puesto>
+            <fechaInicial>2021-08-12</fechaInicial>
+            <fechaFinal>2021-12-12</fechaFinal>
+        </Trabajo>
+        <Trabajo>
+            <lugarTrabajo>Eventos Fontalva</lugarTrabajo>
+            <puesto>Camarero</puesto>
+            <fechaInicial>2015-02-15</fechaInicial>
+            <fechaFinal>2021-03-11</fechaFinal>
+        </Trabajo>
+    </ExperienciaLaboral>
+    <CompetenciasSocioProfesionales>
+        <competencia>
+            <nombreCompetencia>Liderazgo</nombreCompetencia>
+            <nivelCompetencia>5</nivelCompetencia>
+        </competencia>
+        <competencia>
+            <nombreCompetencia>Trabajo en equipo</nombreCompetencia>
+            <nivelCompetencia>4</nivelCompetencia>
+        </competencia>
+        <competencia>
+            <nombreCompetencia>Resolución de problemas</nombreCompetencia>
+            <nivelCompetencia>3</nivelCompetencia>
+        </competencia>
+    </CompetenciasSocioProfesionales>
+<Adicionales>
+    <Disponibilidad> Completa</Disponibilidad>
+    <VehículoPropio> No</VehículoPropio>
+    <permisoConducir>B</permisoConducir>
+    <aficiones>Deporte y tocar y música</aficiones>
+</Adicionales>
 </curriculum>
