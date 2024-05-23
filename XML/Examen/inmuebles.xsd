@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <!-- Estructura principal del XML-->
+
+    <xs:element name="inmuebles">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Elemento inmueble tendrá un número indefinido de apariciones por
+                maxOccurs="unbounded"-->
+                <xs:element name="inmueble" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="operacion" />
+                            <xs:element ref="precio" />
+                            <xs:element name="direccion" type="xs:string" />
+                            <xs:element name="ciudad" type="xs:string" />
+                            <xs:element ref="contacto" />
+                            <xs:element ref="caracteristicas" />
+                            <!-- Máximo 5 fotos con maxOccurs="5"-->
+                            <xs:element name="foto" maxOccurs="5" type="xs:string" />
+                            <xs:element ref="otras" />
+                        </xs:sequence>
+
+                        <!-- Atributos obligatorios de inmueble: codigo y tipo. Ambos tienen
+                        use="required" para que sean obligatorios-->
+                        <xs:attribute name="codigo" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:pattern value="\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="tipo" use="required" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Estructuras secundarias (hijas del elemento inmueble) a las que hacemos referencia en la
+    estructura principal-->
+    <!-- Todas los elementos a continuación aparecerán como ref="" a lo largo del XSD-->
+
+    <!-- OPERACION-->
+
+    <xs:element name="operacion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- 2 únicos valores enum para operacion-->
+                <xs:enumeration value="venta" />
+                <xs:enumeration value="alquiler" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <!-- PRECIO-->
+
+    <xs:element name="precio">
+        <xs:complexType>
+            <xs:attribute name="moneda" default="euros">
+                <xs:simpleType>
+                    <!-- He utilizado un enum para que sea obligatorio poner siempre "euros"-->
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="euros" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <!-- use="required para que sea obligatorio"-->
+            <xs:attribute name="cantidad" use="required" type="xs:integer" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- CONTACTO-->
+
+    <xs:element name="contacto">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- MaxOccurs para telefono de 2. Dejo teléfono como string y no como int 
+                    porque hay espacios entre los números-->
+                <xs:element name="telefono" maxOccurs="2" type="xs:string" />
+                <!-- maxOccurs para email 1. Realmente no es necesario porque de base ya se limita a
+                uno-->
+                <xs:element name="email" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                <!-- Aquí uso un pattern para meter el correo y que siga una estructura habitual-->
+                            <xs:pattern value=".{1,20}[@].{1,20}[.].{2,3}"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- CARACTERISTICAS-->
+
+    <xs:element name="caracteristicas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estado" type="xs:string" />
+                <xs:element name="metros" type="xs:int" />
+                <xs:element ref="habitaciones" />
+                <xs:element name="baños" type="xs:int" />
+                <xs:element ref="orientacion" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- OTRAS-->
+
+    <xs:element name="otras">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- creo un simpleType para estos elementos que
+                     sea varias opciones de si o no en mayúsculas o minúsculas-->
+                <xs:element name="aireacondicionado" type="si-no"/>
+                <xs:element name="trastero" type="si-no" />
+                <xs:element name="garaje" type="si-no" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- ESTRUCTURAS TERCIARIAS. APARECEN DENTRO DE OTROS ELEMENTOS QUE NO SON INMUEBLE-->
+        
+        <!-- HABITACIONES-->
+
+    <xs:element name="habitaciones">
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+                <!-- Valor máximo en 10 incluido-->
+                <xs:maxInclusive value="10" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+         <!-- ORIENTACION-->
+
+    <xs:element name="orientacion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- ENUM de las cuatro orientaciones-->
+                <xs:enumeration value="norte"></xs:enumeration>
+                <xs:enumeration value="sur"></xs:enumeration>
+                <xs:enumeration value="este"></xs:enumeration>
+                <xs:enumeration value="oeste"></xs:enumeration>
+
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:simpleType name="si-no">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="no"></xs:enumeration>
+            <xs:enumeration value="si"></xs:enumeration>
+            <xs:enumeration value="Si"></xs:enumeration>
+            <xs:enumeration value="No"></xs:enumeration>
+            <xs:enumeration value="Sí"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
+            <xs:enumeration value="SI"></xs:enumeration>
+            <xs:enumeration value="SÍ"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

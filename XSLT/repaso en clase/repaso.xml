@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="repaso.xsl"?>
+
+<bib catalogo="12">
+<libro año="2012">
+<titulo>Lenguaje de marcas</titulo>
+<autores>
+<autor>
+<nombre>Juan Manuel Castro Ramos</nombre>
+</autor>
+<autor>
+<nombre> José Ramón Rodríguez Sánchez</nombre>
+</autor>
+</autores>autores>
+<editorial>Garceta</editorial>
+<precio>24.70</precio>
+</libro>
+<libro año="2020">
+<titulo>Lenguaje de marcas</titulo>
+<autores>
+<autor>
+<nombre> Juan Carlos Moreno Pérez</nombre>
+</autor>
+<autor>
+<nombre>Sergio Luis González Ruiz</nombre>
+</autor>
+</autores>
+<editorial>Sintesis</editorial>
+<precio>37.05</precio>
+</libro>
+<libro año="2020">
+<titulo>Entornos de desarrollo</titulo>
+<autores>
+<autor>
+<nombre>Alicia Ramos Martín</nombre>
+</autor>
+<autor>
+<nombre>María Jesús Ramos Martín</nombre>
+</autor>
+</autores>
+<editorial>Garceta</editorial>
+<precio>25.95</precio>
+</libro>
+</bib>

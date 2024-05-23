@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="esquema.xsd">
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<curriculum >
+<?xml-stylesheet type= "text/xsl" href="estructura.xsl"?>
    <!-- Datos personales -->
-
+   
     <DatosPersonales>
-        <nombre>Daniel</nombre>
+        <nombre>Daniel </nombre>
         <apellidos>Fontalva Ostio</apellidos>
         <fechaNacimiento>1998-09-03</fechaNacimiento>
         <lugarNacimiento>Málaga</lugarNacimiento>

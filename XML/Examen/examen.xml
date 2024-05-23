@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inmuebles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="inmuebles.xsd">
+    <inmueble codigo="101459" tipo="piso">
+        <operacion>venta</operacion>
+        <precio moneda="euros" cantidad="150000" />
+        <direccion>San Diego, 9</direccion>
+        <ciudad>Granada</ciudad>
+        <contacto>
+            <telefono>958 25 10 43</telefono>
+            <telefono>615 94 73 19</telefono>
+            <email>pepe@gmail.com</email>
+        </contacto>
+        <caracteristicas>
+            <estado>A reformar</estado>
+            <metros>99</metros>
+            <habitaciones>3</habitaciones>
+            <baños>2</baños>
+            <orientacion>sur</orientacion>
+        </caracteristicas>
+        <foto>imagenes/piso1.jpg</foto>
+        <foto>imagenes/piso12.jpg</foto>
+        <otras>
+            <aireacondicionado>no</aireacondicionado>
+            <trastero>si</trastero>
+            <garaje>si</garaje>
+        </otras>
+    </inmueble>
+    <inmueble codigo="101452" tipo="Casa">
+        <operacion>venta</operacion>
+        <precio moneda="euros" cantidad="240000"/>
+        <direccion>San Andrés, 9</direccion>
+        <ciudad>Granada</ciudad>
+        <contacto>
+            <telefono>958 15 10 13</telefono>
+            <telefono>625 93 63 29</telefono>
+            <email>luis@hostallosarrayanes.com</email>
+        </contacto>
+        <caracteristicas>
+            <estado>Buen estado</estado>
+            <metros>150</metros>
+            <habitaciones>4</habitaciones>
+            <baños>2</baños>
+            <orientacion>norte</orientacion>
+        </caracteristicas>
+        <foto>imagenes/casa1.jpg</foto>
+        <otras>
+            <aireacondicionado>Si</aireacondicionado>
+            <trastero>No</trastero>
+            <garaje>no</garaje>
+        </otras>
+    </inmueble>
+    <inmueble codigo="101452" tipo="Piso">
+        <operacion>venta</operacion>
+        <precio moneda="euros" cantidad="200000"/>
+        <direccion>Recogidas, 9</direccion>
+        <ciudad>Granada</ciudad>
+        <contacto>
+            <telefono>958 15 10 13</telefono>
+            <telefono>625 93 63 29</telefono>
+            <email>antonio@hostallosarrayanes.com</email>
+        </contacto>
+        <caracteristicas>
+            <estado>A reformar</estado>
+            <metros>70</metros>
+            <habitaciones>2</habitaciones>
+            <baños>1</baños>
+            <orientacion>norte</orientacion>
+        </caracteristicas>
+        <foto>imagenes/piso2.jpg</foto>
+        <otras>
+            <aireacondicionado>No</aireacondicionado>
+            <trastero>no</trastero>
+            <garaje>no</garaje>
+        </otras>
+    </inmueble>
+</inmuebles>
