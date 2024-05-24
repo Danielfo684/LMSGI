@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
-<html>
-<head>
-</head>
-<body>
-<h2>Listado de autores (Catálogo número <xsl:value-of select="bib/@catalogo"></xsl:value-of></h2>
-<ul>
-<xsl:for-each select="bib/libro/autores/autor">
-<li>
-<xsl:value-of select="nombre"></xsl:value-of>
-</li>
+<xsl:element name="biblioteca">
+<xsl:for-each select="bib/libro"><xsl:element name="libro" >
+<xsl:attribute name="editorial"><xsl:value-of select="editorial"></xsl:value-of></xsl:attribute>
+<xsl:element name="titulo"><xsl:value-of select="titulo"></xsl:value-of></xsl:element>
+
+</xsl:element>
 </xsl:for-each>
-</ul>
-</body>
-</html>
+
+
+
+
+
+</xsl:element>
 </xsl:template>
 </xsl:stylesheet>
 
