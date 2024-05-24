@@ -9,20 +9,20 @@
 <link rel="stylesheet" href="hojaEstilo.css"/>
 </head>
 <body>
-<div class="contenedor">
+<div class="formatoPagina">
 <header>
 <h1><xsl:value-of select="curriculum/DatosPersonales/nombre"/> <xsl:value-of select="curriculum/DatosPersonales/apellidos"/></h1>
 <p><xsl:copy-of select="curriculum/DatosContacto"/></p>
 </header>
-<div class="seccion">
-<h2>Perfil</h2>
-<p>Fecha de Nacimiento: <xsl:value-of select="curriculum/DatosPersonales/fechaNacimiento"/></p>
-<p>Lugar de Nacimiento: <xsl:value-of select="curriculum/DatosPersonales/lugarNacimiento"/></p>
-<p>Nacionalidad: <xsl:value-of select="curriculum/DatosPersonales/nacionalidades"/></p>
+<div class="seccionPerfil">
+<h2>Sobre mí</h2>
+<p>Filósofo y programador especializado en la implementación de IAs con perspectiva de 
+    género. En el entorno laboral puedo aportar mi actitud proactiva y mis conocimientos
+     como Full-Stack Developer.</p>
 </div>
 <div class="flex-container">
 <div class="flex-item">
-<div class="seccion">
+<div class="seccionImportante">
 <h2>Experiencia Profesional</h2>
 <xsl:for-each select="curriculum/ExperienciaLaboral/Trabajo">
 <div class="subseccion">
@@ -33,7 +33,7 @@
 </div>
 </div>
 <div class="flex-item">
-<div class="seccion">
+<div class="seccionImportante">
 <h2>Educación</h2>
 <xsl:for-each select="curriculum/FormacionAcademica/Estudio">
 <div class="subseccion">
@@ -44,29 +44,28 @@
 </div>
 </div>
 </div>
+<div class="flex-container">
+<div class="flex-item">
 <div class="seccion">
 <h2>Habilidades</h2>
 <ul>
 <xsl:for-each select="curriculum/CompetenciasSocioProfesionales/competencia">
 <li><xsl:value-of select="nombreCompetencia"/> - Nivel: <xsl:value-of select="nivelCompetencia"/></li>
+<li>Permiso de Conducir: <xsl:value-of select="curriculum/Adicionales/permisoConducir"/></li>
 </xsl:for-each>
 </ul>
 </div>
-<div class="seccion">
-<h2>Certificaciones</h2>
-<ul>
-<li>Permiso de Conducir: <xsl:value-of select="curriculum/Adicionales/permisoConducir"/></li>
-<li>Vehículo Propio: <xsl:value-of select="curriculum/Adicionales/VehículoPropio"/></li>
-<li>Disponibilidad: <xsl:value-of select="curriculum/Adicionales/Disponibilidad"/></li>
-</ul>
 </div>
+<div class="flex-item">
 <div class="seccion">
 <h2>Idiomas</h2>
 <ul>
 <xsl:for-each select="curriculum/Idiomas/Lengua">
-<li><xsl:value-of select="nombre"/> - Nivel Oral: <xsl:value-of select="nivelExpresionOral"/>, Nivel Comprensión Oral: <xsl:value-of select="nivelComprensionOral"/>, Nivel Comprensión Escrita: <xsl:value-of select="nivelComprensionEscrita"/>, Nivel Expresión Escrita: <xsl:value-of select="nivelExpresionEscrita"/> - Título Acreditativo: <xsl:value-of select="nivelTitulo"/></li>
+<li><xsl:value-of select="nombre"/>Título Acreditativo: <xsl:value-of select="nivelTitulo"/></li>
 </xsl:for-each>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </body>
